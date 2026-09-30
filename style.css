@@ -134,12 +134,16 @@ nav button {
 .ranking-box ol {
   display: inline-block;
   text-align: left;
-
+ 
   font-size: 18px;
 
   line-height: 1.35;
 }
-
+.ranking-box ol a {
+ text-decoration: none;
+ color: black;
+}
+ 
 
 /* footer */
 
