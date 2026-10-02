@@ -1,116 +1,384 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>마지막 말</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./style.css"
+  >
+
 </head>
+
+
 <body>
-     <div class="container">
-    
-    <header>
-      <div class="logo">
-        OOTD
-      </div>
-      <nav>
-        <a href="#">검색</a>
-        <a href="#">좋아요</a>
-        <a href="#">마이</a>
-        <a href="#">장바구니</a>
-        <button>로그인 / 회원가입</button>
-      </nav>
-    </header>
+
+  <div class="sand-background">
+
+    <div class="dune dune-back"></div>
+    <div class="dune dune-middle"></div>
+    <div class="dune dune-front"></div>
+
+    <div class="sand-flow sand-flow-back"></div>
+    <div class="sand-flow sand-flow-middle"></div>
+    <div class="sand-flow sand-flow-front"></div>
+
+  </div>
 
 
-    <div class="search-area">
-      <input
-        type="text"
-        placeholder="9월 랭킹 상품"
-      >
-    </div>
+  <main class="page">
+
+    <section class="hero">
+
+      <h1>
+        마지막 말
+      </h1>
+
+      <p class="hero-description">
+        당신은 마지막에 어떤 말을 남기고 싶으신가요?
+      </p>
 
 
+      <div class="keyword-select">
 
-    <section class="banner">
+        <input
+          type="radio"
+          name="keyword"
+          id="keyword-love"
+          class="keyword-radio"
+        >
 
-      <div class="banner-item">
-        <img src="banner1.png" alt="배너1">      
-      </div>
+        <input
+          type="radio"
+          name="keyword"
+          id="keyword-thanks"
+          class="keyword-radio"
+        >
+
+        <input
+          type="radio"
+          name="keyword"
+          id="keyword-sorry"
+          class="keyword-radio"
+        >
 
 
-      <div class="banner-item">
-        <img src="banner2.png" alt="배너2">     
-      </div>
+        <div class="keyword-list">
+
+          <label
+            for="keyword-love"
+            class="keyword-card love"
+          >
+            <span>사랑해</span>
+          </label>
 
 
-      <div class="banner-item">
-        <img src="banner3.png" alt="배너3">
+          <label
+            for="keyword-thanks"
+            class="keyword-card thanks"
+          >
+            <span>고마워</span>
+          </label>
 
-       
+
+          <label
+            for="keyword-sorry"
+            class="keyword-card sorry"
+          >
+            <span>미안해</span>
+          </label>
+
+        </div>
+
       </div>
 
     </section>
 
 
-    <!-- 랭킹 -->
-    <main class="ranking-section">
+    <section class="write-area love-write">
 
-      <div class="ranking-box">
-        <h2>일간</h2>
+      <div class="write-card">
 
-        <ol>
-          <li><a href="ootd_menu.html">스파오</a></li>
-          <li>다이소</li>
-          <li>헬리녹스</li>
-          <li>튜드먼트</li>
-          <li>틸아이다이</li>
-        </ol>
+        <span class="english-label">
+          LOVE
+        </span>
+
+        <h2>
+          사랑해
+        </h2>
+
+        <p class="write-description">
+          평소에는 말하지 못했던 사랑을<br>
+          천천히 남겨보세요.
+        </p>
+
+
+        <div class="font-selector">
+
+          <p class="font-title">
+            글꼴 선택
+          </p>
+
+          <div class="font-options">
+
+            <label class="font-option font-batang">
+
+              <input
+                type="radio"
+                name="love-font"
+                checked
+              >
+
+              <span>
+                고운바탕
+              </span>
+
+            </label>
+
+
+            <label class="font-option font-sans">
+
+              <input
+                type="radio"
+                name="love-font"
+              >
+
+              <span>
+                Noto Sans
+              </span>
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <textarea
+          class="message-input"
+          placeholder="전하고 싶은 말을 작성해주세요."
+          maxlength="500"
+        ></textarea>
+
+
+        <div class="recipient-box">
+
+          <p>
+            이 말을 누구에게 전달하고 싶으신가요?
+          </p>
+
+          <input
+            type="text"
+            placeholder="이름 또는 관계를 입력해주세요."
+          >
+
+          <button type="button">
+            마지막 한마디 남기기
+          </button>
+
+        </div>
+
       </div>
 
+    </section>
 
-      <div class="ranking-box">
-        <h2>좋아요</h2>
 
-        <ol>
-          <li>패리티</li>
-          <li>키시닝</li>
-          <li>미세키서울</li>
-          <li>허그유어스킨</li>
-          <li>써저리</li>
-        </ol>
+    <section class="write-area thanks-write">
+
+      <div class="write-card">
+
+        <span class="english-label">
+          THANK YOU
+        </span>
+
+        <h2>
+          고마워
+        </h2>
+
+        <p class="write-description">
+          마음속에 남아 있던 고마움을<br>
+          글로 전해보세요.
+        </p>
+
+
+        <div class="font-selector">
+
+          <p class="font-title">
+            글꼴 선택
+          </p>
+
+          <div class="font-options">
+
+            <label class="font-option font-batang">
+
+              <input
+                type="radio"
+                name="thanks-font"
+                checked
+              >
+
+              <span>
+                고운바탕
+              </span>
+
+            </label>
+
+
+            <label class="font-option font-sans">
+
+              <input
+                type="radio"
+                name="thanks-font"
+              >
+
+              <span>
+                Noto Sans
+              </span>
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <textarea
+          class="message-input"
+          placeholder="고마웠던 이야기를 작성해주세요."
+          maxlength="500"
+        ></textarea>
+
+
+        <div class="recipient-box">
+
+          <p>
+            이 말을 누구에게 전달하고 싶으신가요?
+          </p>
+
+          <input
+            type="text"
+            placeholder="이름 또는 관계를 입력해주세요."
+          >
+
+          <button type="button">
+            마지막 한마디 남기기
+          </button>
+
+        </div>
+
       </div>
 
+    </section>
 
-      <div class="ranking-box">
-        <h2>리뷰</h2>
 
-        <ol>
-          <li>아센토</li>
-          <li>베이프</li>
-          <li>몽벨</li>
-          <li>커버낫</li>
-          <li>오퍼스</li>
-          
-        </ol>
+    <section class="write-area sorry-write">
+
+      <div class="write-card">
+
+        <span class="english-label">
+          SORRY
+        </span>
+
+        <h2>
+          미안해
+        </h2>
+
+        <p class="write-description">
+          마음에 남아 있던 미안함을<br>
+          천천히 적어보세요.
+        </p>
+
+
+        <div class="font-selector">
+
+          <p class="font-title">
+            글꼴 선택
+          </p>
+
+          <div class="font-options">
+
+            <label class="font-option font-batang">
+
+              <input
+                type="radio"
+                name="sorry-font"
+                checked
+              >
+
+              <span>
+                고운바탕
+              </span>
+
+            </label>
+
+
+            <label class="font-option font-sans">
+
+              <input
+                type="radio"
+                name="sorry-font"
+              >
+
+              <span>
+                Noto Sans
+              </span>
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <textarea
+          class="message-input"
+          placeholder="전하고 싶은 말을 작성해주세요."
+          maxlength="500"
+        ></textarea>
+
+
+        <div class="recipient-box">
+
+          <p>
+            이 말을 누구에게 전달하고 싶으신가요?
+          </p>
+
+          <input
+            type="text"
+            placeholder="이름 또는 관계를 입력해주세요."
+          >
+
+          <button type="button">
+            마지막 한마디 남기기
+          </button>
+
+        </div>
+
       </div>
 
-    </main>
+    </section>
 
+  </main>
 
-    <!-- 푸터 -->
-    <footer>
-
-      <p>
-        개인정보처리방침 | 이용약관 | 고객센터 |
-      </p>
-
-       
-      </div>
-
-    </footer>
-
-  </div>
 </body>
+
 </html>
